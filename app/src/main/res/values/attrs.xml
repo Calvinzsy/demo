@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DocumentView">
+        <attr name="borderColor" format="reference|color"/>
+        <attr name="borderWidth" format="reference|dimension"/>
+        <attr name="decorColor" format="reference|color"/>
+        <attr name="decorSize" format="reference|dimension"/>
+        <attr name="titleColor" format="reference|color"/>
+        <attr name="titleText" format="reference|string"/>
+        <attr name="titleTextSize" format="reference|dimension"/>
+        <attr name="subtitleColor" format="reference|color"/>
+        <attr name="subtitleText" format="reference|string"/>
+        <attr name="subtitleTextSize" format="reference|dimension"/>
+    </declare-styleable>
+</resources>

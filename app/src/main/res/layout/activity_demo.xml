@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <com.example.calvin.demo.DocumentView
+                android:id="@+id/documentView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFF0000"
+                app:titleText="孩子的教育资源V1.1.pptx"
+                app:subtitleText="6.9M"
+                android:padding="10dp"
+                app:borderColor="#FFFFFF00"
+                app:decorColor="#FFFF00FF"
+                app:borderWidth="2dp"
+                app:decorSize="15dp"
+                app:subtitleColor="#FF00FF00"
+                app:subtitleTextSize="12sp"
+                app:titleColor="#FF0000FF"
+                app:titleTextSize="20sp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backgroundColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Background"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/backgroundColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/widthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Width"/>
+
+            <EditText
+                android:id="@+id/widthText"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="wrap|match|150"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/heightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"/>
+
+            <EditText
+                android:id="@+id/heightText"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="wrap|match|150"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/borderColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Border color"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/borderColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/borderWidthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Border width"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/borderWidthText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decorColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decor color"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/decorColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decorSizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decor size"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/decorSizeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/titleColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title color"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/titleColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/titleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title text"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/titleSizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title text size"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/titleSizeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/subtitleColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtitle color"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/subtitleColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/subtitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtitle text"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/subtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="subtitle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/subtitleSizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtitle text size"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/subtitleSizeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="20"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
